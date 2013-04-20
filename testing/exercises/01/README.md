@@ -7,21 +7,21 @@
 
 2. Create a file named `test_nonlinear.py` with the following content:
 
-```python
-
-from scbctesting.nonlinear import interaction
-
-
-def test_close_interaction():
-    assert interation(1, 2) == 1
-    assert interaction(0.5, 0.75) == 0.25 
-
-
-def test_far_interaction():
-    assert interaction(0, 2) == 4
-    assert interaction(0.5, 2.5) == 4
-    assert interaction(1, 4) == 9
-```
+   ```python
+   
+   from scbctesting.nonlinear import interaction
+   
+   
+   def test_close_interaction():
+       assert interation(1, 2) == 1
+       assert interaction(0.5, 0.75) == 0.25 
+   
+   
+   def test_far_interaction():
+       assert interaction(0, 2) == 4
+       assert interaction(0.5, 2.5) == 4
+       assert interaction(1, 4) == 9
+   ```
 
 3. Execute the tests in the `test_nonlinear.py` file: you should get an
    `ImportError` in the error message returned by `nosestests`.
@@ -46,8 +46,8 @@ def test_far_interaction():
    Make it such that the fix for the `test_far_interaction` test does not
    break the `test_close_interaction` test.
 
-All tests should pass at this point. Have :beers: or a :coffee:
-to celebrate!
+   All tests should pass at this point. Have :beers: or a :coffee:
+   to celebrate!
 
 6. Add a new test to check that the `interaction` function is symmetric.
 
